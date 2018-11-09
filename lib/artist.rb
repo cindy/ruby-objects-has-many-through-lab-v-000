@@ -21,7 +21,7 @@ class Artist
   end
 
   def genres
-    songs.collect{|s| s.genres}
+    songs.collect{|s| s.genre if s.artist == self}
   end
 
 end
