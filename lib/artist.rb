@@ -18,6 +18,7 @@ class Artist
   end
 
   def songs
+    Songs.find(self)
   end
 
 end
