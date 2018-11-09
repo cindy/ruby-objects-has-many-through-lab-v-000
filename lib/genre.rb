@@ -1,7 +1,8 @@
 class Genre
-  attr_accessor()
+  attr_accessor(:genre)
   attr_reader()
 
-  def initialize()
+  def initialize(genre)
+    @genre = genre
   end
 end
