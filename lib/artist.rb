@@ -17,7 +17,7 @@ class Artist
   end
 
   def songs
-    Songs.find(self)
+    Songs.all.select{|s| s.artist == self}
   end
 
 end
